@@ -64,6 +64,7 @@ def update_post(post_id):
         return jsonify({'error': 'Post not found'}), 404
 
 
+
 @app.route('/posts/<post_id>', methods=['DELETE'])
 def delete_post(post_id):
     result = collection.delete_one({'_id': ObjectId(post_id)})
