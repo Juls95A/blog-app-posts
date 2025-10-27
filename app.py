@@ -18,6 +18,7 @@ def hello_world():
     return jsonify('Hello World!')
 
 
+
 @app.route('/posts', methods=['GET'])
 def get_all_posts():
     cursor = collection.find()
