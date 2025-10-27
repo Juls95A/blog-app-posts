@@ -4,7 +4,6 @@ import os
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 
-
 app = Flask(__name__)
 username = os.environ.get('MONGODB_USERNAME')
 password = os.environ.get('MONGODB_PASSWORD')
